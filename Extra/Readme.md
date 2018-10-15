@@ -1,0 +1,2 @@
+-This folder contains some files used in previous editions and/or are not used in the current edition.
+-Also contains python scripts to manipulate files and a DFS-like program to run on the maze.
