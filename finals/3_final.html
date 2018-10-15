@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Hackaholic</title>
+
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../style1.css" />
+	<script src="../jquery.min.js"></script>
+	<script src="secret.js"></script>
+	<script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div class="header">
+		<center>
+			<h1>HACKAHOLIC</h1>
+		</center>
+	</div>
+
+	<div class="container">
+		<div class="heading">QUEST 3</div>
+		<div class="question1">Hackaholic's Central Detective Agency has discovered this secret website that has a single text field and a button. This website reveals classified information within the combination of codes if the right keys are typed into it. The detectives found out that there's 50 different keys, but could manage to find only one of them, <i>gkobpc</i>. They need your help to retrieve the rest of the keys and find out the classified information.
+			</div>
+		</div>
+		<center>
+			<div class="input_holder">
+					<input type="text" name="password" placeholder="Enter secret key" id="password"/>
+					<button id="submit" onclick="ohmy()">Submit</button><br>
+					<input type="text" name="final" placeholder="Enter the final password" id="final"/>
+					<button id="submit" onclick="clicked()">Submit</button>
+			</div>
+		</center>
+	</div>
+	<script>
+
+		function clicked() {
+			var answer = $('#final').val();
+			check(answer);
+		}
+		
+
+
+	</script>
+</body>
+</html>

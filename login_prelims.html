@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Hackaholic</title>
+	
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+	
+	<div class="header">
+		<center>
+			<h1>Hackaholic Prelims</h1>
+		</center>
+	</div>
+	
+	<div class="container">
+		<div class="question">Logged Out? Log In Again.</div>
+		<center>
+			<div class="input_holder">
+					<input type="text" name="user_id" placeholder="User ID" id="user_id" style="margin: 10px 0px;"/>
+					<button id="submit" onclick="clicked()">Proceed</button>
+			</div>
+		</center>
+	</div>
+	<script>		
+		
+		function clicked() {
+			$.ajax({
+					type: "POST",
+					url: "login.php",
+					dataType: "json",
+					data: {
+						user_id: $('#user_id').val(),
+					},
+					success: function (response) {
+							console.log(response);
+							if (response == "reg_success") {
+								alert("Successfully Logged In");
+								window.location = "prelims/index.html";
+							}else {
+								alert('Login Failed. Try Again.');
+							}
+					},
+					error: function () {
+							console.log("Connection Error");
+					},
+			});
+		}
+
+	</script>
+</body>
+</html>

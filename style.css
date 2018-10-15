@@ -1,0 +1,117 @@
+body{
+	font-family: 'Monospace';
+	margin:  0px;
+	background-image: url("sojan6(1).jpg");
+	color: green;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: auto;
+	font-size: 30px;
+}
+.header h1{
+	padding: 40px 0px;
+}
+
+
+.container{
+	width: 100%;
+	height: auto;
+}
+.container .heading {
+	position: relative;
+	font-size: 30px;
+	padding: 10px 0px;
+	text-align: center;
+	font-weight: 600;
+	letter-spacing: 2px;
+	font-family: 'Arial';
+	border: 3px solid orange;
+	margin: 0px auto;
+	width: 200px;
+}
+.container .question{
+	position: relative;
+	font-size: 22px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	padding: 30px 120px;
+	font-family: 'PT Mono';
+	margin-top: 60px;
+}
+.container .list{
+	position: relative;
+	font-size: 28px;
+	font-family: 'PT Mono';
+	width: calc(100% - 400px);
+	padding: 0px 200px;
+}
+.list .item{
+	margin: 15px 0px;
+	border: 2px solid orange;
+	padding: 5px 20px;
+	margin: 10px;
+	display: inline-block;
+	color: white;
+	background-color: green;
+}
+.list a{
+	text-decoration: none;
+	cursor: pointer;
+	color: green;
+}
+
+.container .input_holder{
+	width: 400px;
+	height: auto;
+	margin: 0px auto;
+}
+.container input{
+	position: relative;
+	width: 360px;
+	font-size: 20px;
+	padding: 5px 10px;
+	outline: none;
+	display: inline;
+}
+.input_holder #submit{
+	font-size: 20px;
+	margin-top: 30px;
+	padding: 5px 20px;
+	background: green;
+	border: 2px solid orange;
+	color: white;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+
+
+
+
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: 100px;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

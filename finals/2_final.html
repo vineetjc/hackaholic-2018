@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Hackaholic</title>
+	
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css" />
+	<script src="../jquery.min.js"></script>
+	<script src="common.js" type="text/javascript"></script>
+</head>
+<body bg = "key2.jpg">
+	
+	<div class="header">
+		<center>
+			<h1>HACKAHOLIC</h1>
+		</center>
+	</div>
+	
+	<div class="container">
+		<div class="heading">QUEST 2</div>
+		<div class="question">This might sound really <B><I>cryptic</I></B> but try to read between the lines.<BR/><!-- ISTHISTHEANSWER --><BR/> Who knows, our friend <B>Gilbert<B/> might be able to help you with this!</div>
+		<center>
+			<div class="input_holder">
+					<input type="text" name="password" placeholder="Password" id="password"/>
+					<button id="submit" onclick="clicked()">Submit</button>
+			</div>
+		</center>
+	</div>
+	<script>		
+		
+		$(document).ready(function(){
+				console.log("");
+		});
+		
+		function clicked() {
+			var answer = $('#password').val();
+			check(answer);
+		}
+
+	</script>
+	<
+</body>
+</html>

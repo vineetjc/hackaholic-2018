@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Hackaholic</title>
+	
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css" />
+	<script src="../jquery.min.js"></script>
+	<script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div class="header">
+		<center>
+			<h1>HACKAHOLIC</h1>
+		</center>
+	</div>
+	
+	<div class="container">
+		<div class="heading">QUEST 4</div>
+		<div class="question">Like usual enter the password. But the real question is where is the password?!<br /></div>
+		<center>
+			<div class="input_holder">
+					<input type="text" name="password" placeholder="Password" id="password"/>
+					<button id="submit" onclick="clicked()">Submit</button>
+			</div>
+		</center>
+	</div>
+	<script>
+
+		function clicked() {
+			var answer = $('#password').val();
+			check(answer);
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Hackaholic</title>
+
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../style1.css" />
+	<script src="../jquery.min.js"></script>
+	<script src="common.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<div class="header">
+		<center>
+			<h1>HACKAHOLIC prelims<a onclick="ohmy()">.</a></h1>
+		</center>
+	</div>
+
+	<div class="container">
+		<div class="heading">QUEST 7</div>
+		<div class="question1">The answers to some questions may not be immediately apparent, but need to be pointed out. Persevere until it clicks.
+
+			</div>
+		</div>
+		<center>
+			<div class="input_holder">
+				<input type="text" name="password" placeholder="Password" id="password"/>
+				<button id="submit" onclick="clicked()">Submit</button>
+			</div>
+		</center>
+	</div>
+	<script>
+
+		function clicked() {
+			var answer = $('#password').val();
+			check(answer);
+		}
+
+		function ohmy() {
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					alert(this.responseText);
+				}
+			};
+			xmlhttp.open("GET", "ohmy.php", true);
+			xmlhttp.send();
+		}
+
+	</script>
+</body>
+</html>

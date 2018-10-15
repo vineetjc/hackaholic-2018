@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>Hackaholic</title>
+	
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+	
+	<div class="header">
+		<center>
+			<h1>HACKAHOLIC prelims</h1>
+		</center>
+	</div>
+	
+	<div class="container">
+		<div class="question">Enter all the details requested below. All spaces are mandatory unless specified.</div>
+		<center>
+			<div class="input_holder">
+					<input type="text" name="user_id" placeholder="User ID" id="user_id" style="margin: 10px 0px;"/>
+					<input type="text" name="player_1" placeholder="Name 1" id="player_1" style="margin: 10px 0px;"/>
+					<input type="text" name="player_2" placeholder="Name 2(Optional)" id="player_2" style="margin: 10px 0px;"/>
+					<input type="text" name="college" placeholder="College" id="college" style="margin: 10px 0px;"/>
+					<button id="submit" onclick="clicked()">Proceed</button>
+			</div>
+		</center>
+	</div>
+	<script>		
+		
+		function clicked() {
+			$.ajax({
+					type: "POST",
+					url: "prelims.php",
+					dataType: "json",
+					data: {
+						player_1: $('#player_1').val(),
+						user_id: $('#user_id').val(),
+						player_2: $('#player_2').val(),
+						college: $('#college').val(),
+					},
+					success: function (response) {
+							console.log(response);
+							if (response == "reg_success") {
+								alert("Successfully Registered");
+								window.location = "prelims/index.html";
+							}else {
+								alert('Registration Failed. Try Again.');
+							}
+					},
+					error: function () {
+							console.log("Connection Error");
+					},
+			});
+		}
+
+	</script>
+</body>
+</html>

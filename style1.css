@@ -1,0 +1,23 @@
+/*Hyperlink maze - making wider input field*/
+.submissionfield { width: 390px; height: auto; border: 1px solid #999999; padding: 5px; }
+
+
+/* question1 same as question, but only to add child image properties for the dot of i question*/
+.question1 img{		
+	top:-12;
+	left:-363;
+	position: relative;
+}
+
+/* question1 same as question, but only to add child image properties for the dot of i question*/
+.question1{
+	position: relative;
+	font-size: 22px;
+	line-height: 30px;
+	color: white;
+	text-align: center;
+	padding: 30px 120px;
+	font-family: 'PT Mono';
+	margin-top: 60px;
+	/*white-space: nowrap;*/
+}

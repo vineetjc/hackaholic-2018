@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Hackaholic</title>
+	
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<script src="jquery.min.js"></script>
+	<script src="common.js" type="text/javascript"></script>
+	<script src="pw.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div class="header">
+		<center>
+			<h1>HACKAHOLIC</h1>
+		</center>
+	</div>
+	
+	<div class="container">
+		<div class="heading">QUEST 5</div>
+		<div class="question">What has keys but do not lock, has space but no room and you can enter but not leave.<br /><i> Hint:-You are using it right now.</i></div>
+		<center>
+			<div class="input_holder">
+					<input type="text" name="password" placeholder="Password" id="password"/>
+					<button id="submit" onclick="clicked()">Submit</button>
+			</div>
+		</center>
+	</div>
+	<script>
+	
+
+		function clicked() {
+			var answer = $('#password').val();
+			check(answer);
+		}
+		
+	</script>
+</body>
+</html>

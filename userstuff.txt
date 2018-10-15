@@ -1,0 +1,6 @@
+hack@192.168.40.103
+vineetissucky
+
+DB NAME: hackaholic
+user: hackaholic
+pass: vineetissucky

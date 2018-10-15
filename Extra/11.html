@@ -1,0 +1,41 @@
+
+<html>
+<head>
+	<title>Hackaholic</title>
+	
+	<link rel="stylesheet" href="fonts/stylesheet.css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	<script src="jquery.min.js"></script>
+	<script src="common.js" type="text/javascript"></script>
+</head>
+<body bg="included.jpg">
+	
+	<div class="header">
+		<center>
+			<h1>HACKAHOLIC</h1>
+		</center>
+	</div>
+	
+	<div class="container">
+		<div class="heading">QUEST 11</div>
+		<div class="question">Do You Have A Strange Feeling Of Deja Vu? Sometimes You Feel As Though You Have Seen Something Before
+							  But Realize Its Not Quite The Same Thing</div>
+		<center>
+			<div class="input_holder">
+					<input type="text" name="username" placeholder="Key 1" id="username" style="margin-bottom: 20px;"/>
+					<input type="text" name="password" placeholder="Key 2" id="password"/>
+					<button id="submit" onclick="clicked()">Submit</button>
+			</div>
+		</center>
+	</div>
+	<script>
+
+		function clicked() {
+			var answer = $('#username').val() + $('#password').val();
+			check(answer);
+		}
+		
+	</script>
+</body>
+</html>
